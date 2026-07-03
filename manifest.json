@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-03T07:21:33Z",
+  "generated_at": "2026-07-03T08:09:04Z",
   "root": ".",
   "spec_version": "1.0",
   "privacy_policy_version": "0.4",
@@ -10,17 +10,17 @@
   },
   "dataset_window": {
     "first_time": "2020-05-01T01:05:55.004Z",
-    "last_time": "2026-05-03T05:01:51.512Z"
+    "last_time": "2026-07-03T08:08:53.375Z"
   },
   "equity_curve_summary": {
     "baseline_timestamp": "2020-05-01T14:39:40.387Z",
     "baseline_balance_xbt": "1.83953943",
     "completed_deposits_total_xbt": "1.77199051",
     "completed_withdrawals_total_xbt": "66.00180000",
-    "latest_adjusted_wealth_xbt": "96.32555393",
-    "latest_adjusted_wealth_multiple": "52.363952",
-    "latest_adjusted_marked_wealth_xbt": "95.20953674",
-    "latest_adjusted_marked_multiple": "51.757269",
+    "latest_adjusted_wealth_xbt": "97.81111490",
+    "latest_adjusted_wealth_multiple": "53.171524",
+    "latest_adjusted_marked_wealth_xbt": "100.44120814",
+    "latest_adjusted_marked_multiple": "54.601280",
     "methodology": "Baseline is the first fully-funded XBT wallet balance after the last completed deposit on the first trading day. Wallet-history cash-flow events are applied in timestamp-first order when BitMEX exposes both timestamp and transactTime. After baseline, completed withdrawals are added back, completed deposits are subtracted, and internal Transfer rows are neutralized. Wealth is measured as XBT wallet balance plus USDt wallet balance converted to XBT using the latest observed internal XBT/USDT conversion or spot rate. Conversion and SpotTrade XBT<->USDt pairs are treated as internal wallet swaps, not losses."
   },
   "files": [
@@ -30,7 +30,7 @@
       "source_endpoint": "/api/v1/execution/tradeHistory",
       "raw_source": "raw/api-v1-execution-tradeHistory.ndjson.gz",
       "role": "primary execution ledger",
-      "rows": 173113,
+      "rows": 173373,
       "columns": [
         "timestamp",
         "transactTime",
@@ -73,10 +73,10 @@
         "triggered",
         "workingIndicator"
       ],
-      "sha256": "ff1a598fa7cce2041fdb9283eaeb3b6061ae1fd6fdbde2e0545eb0a47649e7e8",
-      "size_bytes": 68444688,
+      "sha256": "0ff7f47349720106d635ba0826de39102e771f66a06f9041d4e9c0838170b30c",
+      "size_bytes": 68540867,
       "first_time": "2020-05-01T09:03:47.360Z",
-      "last_time": "2026-05-03T04:00:00.318Z"
+      "last_time": "2026-07-03T04:00:00.279Z"
     },
     {
       "file": "api-v1-order.csv",
@@ -84,7 +84,7 @@
       "source_endpoint": "/api/v1/order",
       "raw_source": "raw/api-v1-order.ndjson.gz",
       "role": "order intent and lifecycle ledger",
-      "rows": 43219,
+      "rows": 43243,
       "columns": [
         "timestamp",
         "transactTime",
@@ -109,10 +109,10 @@
         "settlCurrency",
         "strategy"
       ],
-      "sha256": "b1a2bf5143f9c31162fe216ef3cf8748dc0c755e17ee89906343a80a24a19b74",
-      "size_bytes": 7792586,
+      "sha256": "01166366a5b7182246d73dcbd811028d683e227d187909082c51827f4495439d",
+      "size_bytes": 7796963,
       "first_time": "2020-05-01T09:03:47.360Z",
-      "last_time": "2026-04-22T15:30:40.784Z"
+      "last_time": "2026-07-02T10:36:06.783Z"
     },
     {
       "file": "api-v1-user-walletHistory.csv",
@@ -120,7 +120,7 @@
       "source_endpoint": "/api/v1/user/walletHistory?currency=all",
       "raw_source": "raw/api-v1-user-walletHistory.ndjson.gz",
       "role": "wallet event ledger across deposits, withdrawals, funding, realised pnl, spot trades, conversions",
-      "rows": 17177,
+      "rows": 17424,
       "columns": [
         "timestamp",
         "transactTime",
@@ -136,10 +136,10 @@
         "address",
         "marginBalance"
       ],
-      "sha256": "17520faf8a3997f22fafebeb8241d70a11e8c3aaa59e58d15f9d29765de05502",
-      "size_bytes": 2761840,
+      "sha256": "35e25205e56cc3f87a6450fbee6038b808a65bf9c85710988e179c2f65d285da",
+      "size_bytes": 2800006,
       "first_time": "2020-05-01T01:05:55.004Z",
-      "last_time": "2026-05-03T05:01:51.512Z"
+      "last_time": "2026-07-03T08:08:53.375Z"
     },
     {
       "file": "api-v1-position.snapshot.csv",
@@ -147,7 +147,7 @@
       "source_endpoint": "/api/v1/position",
       "raw_source": "raw/api-v1-position.snapshot.json",
       "role": "terminal position anchor",
-      "rows": 2,
+      "rows": 1,
       "columns": [
         "timestamp",
         "symbol",
@@ -205,10 +205,10 @@
         "unrealisedPnlPcnt",
         "unrealisedRoePcnt"
       ],
-      "sha256": "81c7c6b21a0cb8c19c47e2f8d9adddbfc9d7229dea7b75e938e26d703a3d7066",
-      "size_bytes": 3531,
-      "first_time": "2026-05-02T20:18:28.068Z",
-      "last_time": "2026-05-03T05:01:40.510Z"
+      "sha256": "f58851f7ca1ef0d42d16507bd71830301b1f9919fa895267f0770d23c2378643",
+      "size_bytes": 1090,
+      "first_time": "2026-07-03T08:08:50.506Z",
+      "last_time": "2026-07-03T08:08:50.506Z"
     },
     {
       "file": "api-v1-user-wallet.snapshot-all.csv",
@@ -229,10 +229,10 @@
         "pendingDebit",
         "confirmedDebit"
       ],
-      "sha256": "8a03068cfed423a284698e5d84e16546df956fbb89426318fac4cc6dc62ac89c",
+      "sha256": "57b43cae43d9baebc3778e82a602d2483e6d7c5352dce71499e8833c8d31d29f",
       "size_bytes": 897,
       "first_time": "2025-11-25T09:22:52.847Z",
-      "last_time": "2026-05-03T04:00:00.318Z"
+      "last_time": "2026-07-03T04:00:00.279Z"
     },
     {
       "file": "api-v1-user-margin.snapshot-all.csv",
@@ -268,10 +268,10 @@
         "isolatedUnrealisedPnl",
         "targetExcessMargin"
       ],
-      "sha256": "67ccc7b6dddf408350e6a19db9b43c743e3440d71f1436c540c297304ee3011c",
-      "size_bytes": 889,
+      "sha256": "4b65e470e1ca7326231f2bf970f4585c008ca5457ebd14f2bd8e7b4ef315feda",
+      "size_bytes": 890,
       "first_time": "2026-04-29T02:09:35.360Z",
-      "last_time": "2026-05-03T05:01:50.507Z"
+      "last_time": "2026-07-03T08:08:50.506Z"
     },
     {
       "file": "api-v1-user-walletSummary.all.csv",
@@ -292,8 +292,8 @@
         "realisedPnl",
         "unrealisedPnl"
       ],
-      "sha256": "a409301c108a950a52a30b7f412af5186db2c6db694615c45025ebf6d1518558",
-      "size_bytes": 4913,
+      "sha256": "c996121f6875f53c0638d9f73594462d033d050d0bc8966059cae3de423e8d5a",
+      "size_bytes": 4911,
       "first_time": null,
       "last_time": null
     },
@@ -303,7 +303,7 @@
       "source_endpoint": "/api/v1/instrument",
       "raw_source": "raw/api-v1-instrument.all.ndjson.gz",
       "role": "instrument dictionary and contract spec reference",
-      "rows": 3044,
+      "rows": 3085,
       "columns": [
         "symbol",
         "state",
@@ -404,10 +404,10 @@
         "volume24h",
         "vwap"
       ],
-      "sha256": "acc309d016e17ca6ac7da73e02b0b7ab288039393e50c5a948abb5a69f815d93",
-      "size_bytes": 1229797,
+      "sha256": "50c2bb34bd98b758337b2d98f9245c695de5a589bd2d0960a952a52f6787e807",
+      "size_bytes": 1246854,
       "first_time": "2014-11-21T21:00:02.409Z",
-      "last_time": "2026-05-03T05:01:56.139Z"
+      "last_time": "2026-07-03T08:08:54.165Z"
     },
     {
       "file": "api-v1-wallet-assets.csv",
@@ -432,8 +432,8 @@
         "minDepositAmount",
         "minWithdrawalAmount"
       ],
-      "sha256": "27a7263f92e3333833219a1f80d7d2a496018ce9c523ee6b51eb5ceaad05ff77",
-      "size_bytes": 17515,
+      "sha256": "ecc45d8ea44b58497fc8adee9054487337f101b81c495fa63e055942ce317f4f",
+      "size_bytes": 17495,
       "first_time": null,
       "last_time": null
     },
@@ -441,7 +441,7 @@
       "file": "derived-equity-curve.csv",
       "kind": "derived_csv",
       "role": "xbt-denominated wallet-equivalent wealth curve across XBT and USDt balances",
-      "rows": 17161,
+      "rows": 17408,
       "columns": [
         "timestamp",
         "transactTime",
@@ -465,40 +465,40 @@
         "baselineTimestamp",
         "methodologyVersion"
       ],
-      "sha256": "61f71204f17274cd85e126e3b887a02a6bb614c0da6d6213e8141a13d8f477e3",
-      "size_bytes": 4113051,
+      "sha256": "7d71494e8ef606f651b488609fa05d5a66c1ced6e9fb22fe8783429b9a2b9f25",
+      "size_bytes": 4172341,
       "first_time": "2020-05-01T14:39:40.387Z",
-      "last_time": "2026-05-03T05:01:51.512Z",
+      "last_time": "2026-07-03T08:08:53.375Z",
       "baseline_timestamp": "2020-05-01T14:39:40.387Z",
       "baseline_balance_xbt": "1.83953943",
       "completed_deposits_total_xbt": "1.77199051",
       "completed_withdrawals_total_xbt": "66.00180000",
-      "latest_adjusted_wealth_xbt": "96.32555393",
-      "latest_adjusted_wealth_multiple": "52.363952",
-      "latest_adjusted_marked_wealth_xbt": "95.20953674",
-      "latest_adjusted_marked_multiple": "51.757269",
+      "latest_adjusted_wealth_xbt": "97.81111490",
+      "latest_adjusted_wealth_multiple": "53.171524",
+      "latest_adjusted_marked_wealth_xbt": "100.44120814",
+      "latest_adjusted_marked_multiple": "54.601280",
       "methodology": "Baseline is the first fully-funded XBT wallet balance after the last completed deposit on the first trading day. Wallet-history cash-flow events are applied in timestamp-first order when BitMEX exposes both timestamp and transactTime. After baseline, completed withdrawals are added back, completed deposits are subtracted, and internal Transfer rows are neutralized. Wealth is measured as XBT wallet balance plus USDt wallet balance converted to XBT using the latest observed internal XBT/USDT conversion or spot rate. Conversion and SpotTrade XBT<->USDt pairs are treated as internal wallet swaps, not losses."
     },
     {
       "file": "cumulative-performance.png",
       "kind": "derived_asset",
       "role": "readme performance figure derived from derived-equity-curve.csv",
-      "sha256": "b642b68b1500d6ed74651421f9f574ff1ee41e41fdcaadfaff98e811d83d89d8",
-      "size_bytes": 137895
+      "sha256": "6222a60a95d08d01acd243ac4690043e1ccfc50035a67f2d9df49f69e97e6746",
+      "size_bytes": 137247
     },
     {
       "file": "README.md",
       "kind": "documentation",
       "role": "repository readme",
-      "sha256": "6dd74dc0e715fd80120bfa67ef7c873461a791155ac2ee535265a2bed2028e27",
-      "size_bytes": 9752
+      "sha256": "11ca074f9772a90e15b0d044ac2e202e4afacf7c03ae142976e6ea504e4c5fb2",
+      "size_bytes": 9753
     },
     {
       "file": "README.zh-CN.md",
       "kind": "documentation",
       "role": "repository readme",
-      "sha256": "48b15517c6b7c71b47cdc5027ecf026da55ea0eebc86ab23f433236b93a6991a",
-      "size_bytes": 9571
+      "sha256": "857c6df2f03672c3b9e4da8c4643ea4f2b0e8acc22edfaafd2634f90ab4e3412",
+      "size_bytes": 9572
     }
   ]
 }
